@@ -1,3 +1,3 @@
 - hosts: all
   roles:
-     - { role: '/home/ec2-user/.ansible/roles/RedHatOfficial.rhel7_c2s' }
+     - RedHatOfficial.rhel7_c2s
