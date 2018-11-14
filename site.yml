@@ -1,0 +1,9 @@
+- name: copy keys
+  hosts: all
+  become: no
+  gather_facts: no
+  tasks:
+    - name: example copying file with owner and permissions
+      copy:
+        src: /home/ec2-user/.ssh/id_rsa.pub
+        dest: /home/ec2-user/.ssh/id_rsa.pub
